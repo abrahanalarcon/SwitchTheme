@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:SwitchTheme"
+             x:Class="SwitchTheme.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            
+            <Style x:Key="Headline" TargetType="Label">
+                <Setter Property="FontSize" Value="32"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Style x:Key="SubHeadline" TargetType="Label">
+                <Setter Property="FontSize" Value="24"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+            </Style>
+
+            <Color x:Key="PrimaryColor">#512BD4</Color>
+            <Color x:Key="SecondaryColor">#FFFFFF</Color>
+            <Color x:Key="TextColor">#000000</Color>
+            <Color x:Key="BackgroundColor">#FFFFFF</Color>
+
+          
+            <Color x:Key="PrimaryColorDark">#7E57C2</Color>
+            <Color x:Key="SecondaryColorDark">#121212</Color>
+            <Color x:Key="TextColorDark">#FFFFFF</Color>
+            <Color x:Key="BackgroundColorDark">#121212</Color>
+
+            
+            <Color x:Key="DynamicPrimaryColor">#512BD4</Color>
+            <Color x:Key="DynamicSecondaryColor">#FFFFFF</Color>
+            <Color x:Key="DynamicTextColor">#000000</Color>
+            <Color x:Key="DynamicBackgroundColor">#FFFFFF</Color>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
